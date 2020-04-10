@@ -1,0 +1,68 @@
+{
+  "name": "vue-marquee-component",
+  "version": "0.1.0",
+  "description": "Vue跑马灯组件,支持四个方向滚动",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build --dest dist --target lib --name VueMarqueeComponent src/components/VueMarqueeComponent.vue && vue-cli-service build --dest docs"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-plugin-eslint": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "babel-eslint": "^10.1.0",
+    "bootstrap": "^4.4.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wxh16144/vue-marquee-component.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue2",
+    "vuejs2",
+    "vue-component",
+    "marquee",
+    "vue-marquee",
+    "component"
+  ],
+  "author": "WuXiaohong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wxh16144/vue-marquee-component/issues"
+  },
+  "homepage": "https://github.com/Wxh16144/vue-marquee-component#readme"
+}
