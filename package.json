@@ -2,15 +2,23 @@
   "name": "vue-marquee-component",
   "version": "0.1.0",
   "description": "Vue跑马灯组件,支持四个方向滚动",
-  "private": false,
+  "main": "dist/VueMarqueeComponent.common.js",
+  "unpkg": "dist/VueMarqueeComponent.umd.min.js",
+  "module": "dist/VueMarqueeComponent.common.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "vue-cli-service build --dest dist --target lib --name VueMarqueeComponent src/components/VueMarqueeComponent.vue && vue-cli-service build --dest docs"
+    "build": "vue-cli-service build --dest dist --target lib --name VueMarqueeComponent src/components/Marquee.vue && vue-cli-service build --dest docs"
   },
   "dependencies": {
+    "animejs": "^3.2.0",
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "lodash": "^4.17.15",
+    "vue": "^2.6.11",
+    "vue-slider-component": "^3.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.3.0",
