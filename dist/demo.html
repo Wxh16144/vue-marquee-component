@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>VueMarqueeComponent demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./VueMarqueeComponent.umd.js"></script>
+
+<link rel="stylesheet" href="./VueMarqueeComponent.css">
+
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: VueMarqueeComponent
+  }
+}).$mount('#app')
+</script>
