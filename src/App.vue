@@ -101,7 +101,7 @@ export default {
   data() {
     return {
       IMGURL: `https://via.placeholder.com/`,
-      MYWEBIMG: `http://wxhboy.cn/img/`,
+      MYWEBIMG: `https://raw.githubusercontent.com/Wxh16144/img/master/`,
       lists: Array(randomNumber(10, 25)),
       emojiList: [
         "🥺",
