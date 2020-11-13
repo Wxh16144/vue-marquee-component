@@ -1,0 +1,35 @@
+name: GitHub Actions Generate Docs
+
+on:
+  push:
+    branches:
+      - master
+      - actions
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - run: |
+          npm ci
+          npm run build
+
+      - name: commit
+        run: |
+          git config --global user.email "wxh1220@gmail.com"
+          git config --global user.name "Wuxh.Action"
+          git add .
+          git commit -m "build" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
