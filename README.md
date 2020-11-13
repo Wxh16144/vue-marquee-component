@@ -3,11 +3,9 @@
 [![npm](https://img.shields.io/npm/v/vue-marquee-component.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-component)
 [![npm](https://img.shields.io/npm/dt/vue-marquee-component.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-component)
 
-
 ## Demo
 
 [Demo here](https://wxh16144.github.io/vue-marquee-component/)
-
 
 ## Install
 
@@ -21,24 +19,24 @@ The most common use case is to register the component globally.
 
 ```js
 // in your main.js or similar file
-import Vue from 'vue'
-import VueMarquee from 'vue-marquee-component'
+import Vue from 'vue';
+import VueMarquee from 'vue-marquee-component';
 
-Vue.use(VueMarquee)
+Vue.use(VueMarquee);
 ```
 
 Alternatively you can do this to register the components:
 
 ```js
 // HelloWorld.vue
-import { Marquee, Slide } from "vue-marquee-component"
+import { Marquee, Slide } from 'vue-marquee-component';
 
 export default {
   components: {
     [Marquee.name]: Marquee,
     [Slide.name]: Slide
   }
-}
+};
 ```
 
 On your page you can now use html like this:
@@ -82,14 +80,17 @@ On your page you can now use html like this:
 ```
 
 ## Props
-| Prop         | Type    | Default           | Description                                        |
-| ------------ | ------- | ----------------- | -------------------------------------------------- |
-| direction    | string  | left              | Marquee rolling direction                          |
-| duration     | Number  | Total length * 30 | Move a few degrees (`left` `right` `top` `bottom`) |
-| showProgress | Boolean | true              | Whether to show the progress bar                   |
+
+| Prop         | Type    | Default            | Description                                        |
+| ------------ | ------- | ------------------ | -------------------------------------------------- |
+| direction    | string  | left               | Move a few degrees (`left` `right` `top` `bottom`) |
+| duration     | Number  | Total length \* 30 | Marquee rolling direction                          |
+| showProgress | Boolean | true               | Whether to show the progress bar                   |
 
 ## Important information for dynamic content
+
 If you change the content you need reload the component. For this use property `:key` [see more](https://vuejs.org/v2/api/#key)
+
 ```html
 <!-- parse a unique key for reload the component  -->
 <vue-marquee :key="currentTrack.id">
